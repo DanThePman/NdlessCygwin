@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConfigurationName>Release</ConfigurationName>
+  <Project xsi:type="com.visualgdb.project.windows">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>CygwinCygdrive</PathStyle>
+      <LocalDirForAbsolutePaths>C:\cygwin64</LocalDirForAbsolutePaths>
+    </CustomSourceDirectories>
+    <MainSourceDirectory>$(ProjectDir)</MainSourceDirectory>
+  </Project>
+  <Build xsi:type="com.visualgdb.build.make">
+    <MakeFilePathRelativeToSourceDir>Makefile</MakeFilePathRelativeToSourceDir>
+    <MakeConfigurationName>Release</MakeConfigurationName>
+    <Toolchain>
+      <Name>Cygwin</Name>
+      <Location>C:\cygwin64</Location>
+      <UnixSystem>false</UnixSystem>
+      <GCC>C:\cygwin64\bin\gcc.exe</GCC>
+      <GXX>C:\cygwin64\bin\g++.exe</GXX>
+      <AR>C:\cygwin64\bin\ar.exe</AR>
+      <Make>C:\cygwin64\bin\make.exe</Make>
+      <AdditionalPathDirectories>
+        <string>C:\cygwin64\bin</string>
+      </AdditionalPathDirectories>
+      <RequireCmdExe>false</RequireCmdExe>
+      <RequireCtrlBreak>true</RequireCtrlBreak>
+      <ToolCheckInstructionsURL>http://visualgdb.com/KB?ProblemID=cygwin</ToolCheckInstructionsURL>
+      <SourceDirMapping>
+        <Directories />
+        <PathStyle>CygwinCygdrive</PathStyle>
+        <LocalDirForAbsolutePaths>C:\cygwin64</LocalDirForAbsolutePaths>
+      </SourceDirMapping>
+    </Toolchain>
+    <MakeCommandTemplate>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <Command>C:\cygwin64\bin\make.exe</Command>
+      <WorkingDirectory>$(BuildDir)</WorkingDirectory>
+      <Environment>
+        <Records>
+          <Record>
+            <VariableName>LANG</VariableName>
+            <Value>en_US.UTF-8</Value>
+          </Record>
+          <Record>
+            <VariableName>PATH</VariableName>
+            <Value>C:\cygwin64\bin;%PATH%</Value>
+          </Record>
+        </Records>
+      </Environment>
+    </MakeCommandTemplate>
+  </Build>
+  <Debug xsi:type="com.visualgdb.debug.local">
+    <AdditionalStartupCommands />
+    <LaunchGDBSettings xsi:type="GDBLaunchParametersNewInstance">
+      <GDBEnvironment>
+        <Records>
+          <Record>
+            <VariableName>LANG</VariableName>
+            <Value>en_US.UTF-8</Value>
+          </Record>
+          <Record>
+            <VariableName>PATH</VariableName>
+            <Value>C:\cygwin64\bin;%PATH%</Value>
+          </Record>
+        </Records>
+      </GDBEnvironment>
+      <DebuggedProgram>$(TargetPath)</DebuggedProgram>
+      <GDBServerPort>2000</GDBServerPort>
+      <ProgramArguments />
+    </LaunchGDBSettings>
+    <GenerateCtrlBreakInsteadOfCtrlC>true</GenerateCtrlBreakInsteadOfCtrlC>
+  </Debug>
+  <CustomBuild>
+    <PreBuildActions />
+    <PostBuildActions />
+    <PreCleanActions />
+    <PostCleanActions />
+  </CustomBuild>
+  <CustomDebug>
+    <PreDebugActions />
+    <PostDebugActions />
+    <DebugStopActions />
+    <BreakMode>Default</BreakMode>
+  </CustomDebug>
+  <CustomShortcuts>
+    <Shortcuts />
+    <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
+  </CustomShortcuts>
+  <UserDefinedVariables />
+  <CodeSense>
+    <Enabled>Unknown</Enabled>
+    <ExtraSettings>
+      <HideErrorsInSystemHeaders>true</HideErrorsInSystemHeaders>
+    </ExtraSettings>
+  </CodeSense>
+</VisualGDBProjectSettings2>

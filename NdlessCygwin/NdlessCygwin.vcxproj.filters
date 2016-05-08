@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{7748026e-ba78-4199-8804-9d4b97981187}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{6f21aaf3-d69f-4bba-9ee8-476310cafb9c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{ddfc3dbb-f7d2-4e23-b010-b9e111e6cab4}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{d2179d5f-fe33-48f6-9cfc-06e4b02f0d6b}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Header files\Textures">
+      <UniqueIdentifier>{a346f13e-da00-4faf-aa6d-560f4a0c6d5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="opengl.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Printing.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_Funcs.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Visuals.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\background.h">
+      <Filter>Header files\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\menu.h">
+      <Filter>Header files\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Textures\result.h">
+      <Filter>Header files\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatToString.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

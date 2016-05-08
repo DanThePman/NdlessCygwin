@@ -1,0 +1,3 @@
+﻿VisualGDB : warning : Found a source file with spaces in the path: "C:\Users\Daniel\Documents\Visual Studio 2015\Projects\NdlessCygwin\NdlessCygwin\debug.mak". If the build fails, please rename/move it.
+  VisualGDB: Run "C:\cygwin64\bin\make.exe CONFIG=Debug" in directory "C:\Users\Daniel\Documents\Visual Studio 2015\Projects\NdlessCygwin\NdlessCygwin" on local computer
+  make: Nothing to be done for 'all'.
